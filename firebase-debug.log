@@ -1,0 +1,546 @@
+[debug] [2024-05-24T14:57:07.797Z] ----------------------------------------------------------------------
+[debug] [2024-05-24T14:57:07.799Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nkaps\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-24T14:57:07.799Z] CLI Version:   13.10.0
+[debug] [2024-05-24T14:57:07.799Z] Platform:      win32
+[debug] [2024-05-24T14:57:07.799Z] Node Version:  v22.2.0
+[debug] [2024-05-24T14:57:07.800Z] Time:          Fri May 24 2024 10:57:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-05-24T14:57:07.800Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-24T14:57:07.850Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-05-24T14:57:07.855Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T14:57:07.855Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T14:57:07.856Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\nkaps\StudioProjects\softphone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-24T14:57:45.522Z] Using project from CLI flag: softphone-283aa
+[debug] [2024-05-24T14:57:45.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T14:57:46.018Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T14:57:46.018Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[info] i  Using project softphone-283aa (Softphone) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-05-24T14:57:46.033Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-05-24T14:57:46.033Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:57:46.453Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com 200
+[debug] [2024-05-24T14:57:46.453Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-05-24T14:57:46.454Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-05-24T14:57:46.454Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:57:47.002Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-05-24T14:57:47.002Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-05-24T14:57:57.003Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-05-24T14:57:57.004Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:57:57.357Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com 200
+[debug] [2024-05-24T14:57:57.358Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-05-24T14:57:57.361Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T14:57:57.725Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T14:57:57.725Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[debug] [2024-05-24T14:58:06.210Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances databaseId=softphone-283aa-default-rtdb&validateOnly=true
+[debug] [2024-05-24T14:58:06.210Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-05-24T14:58:06.691Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances 200
+[debug] [2024-05-24T14:58:06.691Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances {"name":"projects/786108804212/locations/us-central1/instances/softphone-283aa-default-rtdb","project":"projects/786108804212","databaseUrl":"https://softphone-283aa-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-05-24T14:58:06.692Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances databaseId=softphone-283aa-default-rtdb
+[debug] [2024-05-24T14:58:06.692Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-05-24T14:58:07.213Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances 200
+[debug] [2024-05-24T14:58:07.214Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/us-central1/instances {"name":"projects/786108804212/locations/us-central1/instances/softphone-283aa-default-rtdb","project":"projects/786108804212","databaseUrl":"https://softphone-283aa-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-05-24T14:58:09.358Z] >>> [apiv2][query] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-05-24T14:58:09.842Z] <<< [apiv2][status] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-05-24T14:58:09.842Z] <<< [apiv2][body] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for softphone-283aa-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-05-24T14:58:09.847Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com [none]
+[debug] [2024-05-24T14:58:09.847Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:58:10.227Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com 200
+[debug] [2024-05-24T14:58:10.228Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com [omitted]
+[debug] [2024-05-24T14:58:10.228Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) [none]
+[debug] [2024-05-24T14:58:10.527Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) 200
+[debug] [2024-05-24T14:58:10.527Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) {"name":"projects/softphone-283aa/databases/(default)","uid":"1f05f1e6-e8e9-4504-ac63-722c3155c91f","createTime":"2024-05-24T14:50:06.489653Z","updateTime":"2024-05-24T14:50:06.489653Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-05-24T14:50:06.489653Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IPTHnKvGpoYDMJT1zNTEpoYD"}
+[debug] [2024-05-24T14:58:10.527Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-05-24T14:58:10.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T14:58:10.528Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T14:58:10.528Z] [iam] checking project softphone-283aa for permissions ["firebase.projects.get"]
+[debug] [2024-05-24T14:58:10.528Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions [none]
+[debug] [2024-05-24T14:58:10.528Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:58:10.528Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T14:58:10.691Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions 200
+[debug] [2024-05-24T14:58:10.691Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-24T14:58:11.929Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases pageSize=10&pageToken=
+[debug] [2024-05-24T14:58:12.195Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases 200
+[debug] [2024-05-24T14:58:12.195Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases {"releases":[{"name":"projects/softphone-283aa/releases/cloud.firestore","rulesetName":"projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19","createTime":"2024-05-24T14:50:10.921819Z","updateTime":"2024-05-24T14:50:10.921819Z"}]}
+[debug] [2024-05-24T14:58:12.195Z] Found ruleset: projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19
+[debug] [2024-05-24T14:58:12.195Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 [none]
+[debug] [2024-05-24T14:58:12.350Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 200
+[debug] [2024-05-24T14:58:12.350Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-24T14:58:15.864Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-05-24T14:58:15.865Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-05-24T14:58:16.170Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-05-24T14:58:16.170Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-05-24T14:58:17.168Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-05-24T14:58:17.169Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/softphone-283aa/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-05-24T14:58:17.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T14:58:17.170Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T14:58:17.170Z] [iam] checking project softphone-283aa for permissions ["firebase.projects.get"]
+[debug] [2024-05-24T14:58:17.171Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions [none]
+[debug] [2024-05-24T14:58:17.171Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:58:17.171Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T14:58:17.304Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions 200
+[debug] [2024-05-24T14:58:17.305Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T14:58:17.305Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-24T14:58:17.305Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:58:17.306Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-24T14:58:17.306Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T14:58:17.693Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-24T14:58:17.694Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-05-24T14:58:17.979Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-24T14:58:17.979Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote .js/package.json 
+[info] +  Wrote .js/.eslintrc.js 
+[info] +  Wrote .js/index.js 
+[info] +  Wrote .js/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-24T14:59:22.868Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T14:59:23.154Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T14:59:23.154Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa","realtimeDatabaseInstance":"softphone-283aa-default-rtdb"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-05-24T14:59:54.164Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-05-24T14:59:54.255Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-05-24T14:59:54.255Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.1","browserURL":"https://www.gstatic.com/firebasejs/10.12.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.1/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.1/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\nkaps\StudioProjects\softphone\functions is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=398914369&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-05-24T15:00:59.440Z] ----------------------------------------------------------------------
+[debug] [2024-05-24T15:00:59.443Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nkaps\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-24T15:00:59.443Z] CLI Version:   13.10.0
+[debug] [2024-05-24T15:00:59.443Z] Platform:      win32
+[debug] [2024-05-24T15:00:59.443Z] Node Version:  v22.2.0
+[debug] [2024-05-24T15:00:59.443Z] Time:          Fri May 24 2024 11:00:59 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-05-24T15:00:59.444Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-24T15:00:59.521Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-05-24T15:00:59.527Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T15:00:59.527Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T15:00:59.528Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\nkaps\StudioProjects\softphone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-24T15:01:07.113Z] Using project from CLI flag: softphone-283aa
+[debug] [2024-05-24T15:01:07.115Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T15:01:07.459Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T15:01:07.459Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa","realtimeDatabaseInstance":"softphone-283aa-default-rtdb"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[info] i  Using project softphone-283aa (Softphone) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-05-24T15:01:07.463Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-05-24T15:01:07.464Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:01:07.840Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com 200
+[debug] [2024-05-24T15:01:07.840Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-05-24T15:01:07.841Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/-/instances/softphone-283aa-default-rtdb [none]
+[debug] [2024-05-24T15:01:08.232Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/-/instances/softphone-283aa-default-rtdb 200
+[debug] [2024-05-24T15:01:08.232Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/-/instances/softphone-283aa-default-rtdb {"name":"projects/786108804212/locations/us-central1/instances/softphone-283aa-default-rtdb","project":"projects/786108804212","databaseUrl":"https://softphone-283aa-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-05-24T15:01:09.698Z] >>> [apiv2][query] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-05-24T15:01:09.811Z] <<< [apiv2][status] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-05-24T15:01:09.811Z] <<< [apiv2][body] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for softphone-283aa-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-05-24T15:01:09.824Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com [none]
+[debug] [2024-05-24T15:01:09.824Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:01:10.096Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com 200
+[debug] [2024-05-24T15:01:10.096Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com [omitted]
+[debug] [2024-05-24T15:01:10.096Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) [none]
+[debug] [2024-05-24T15:01:10.374Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) 200
+[debug] [2024-05-24T15:01:10.374Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) {"name":"projects/softphone-283aa/databases/(default)","uid":"1f05f1e6-e8e9-4504-ac63-722c3155c91f","createTime":"2024-05-24T14:50:06.489653Z","updateTime":"2024-05-24T14:50:06.489653Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-05-24T14:50:06.489653Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IN+v/YDHpoYDMJT1zNTEpoYD"}
+[debug] [2024-05-24T15:01:10.375Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-05-24T15:01:10.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T15:01:10.375Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T15:01:10.375Z] [iam] checking project softphone-283aa for permissions ["firebase.projects.get"]
+[debug] [2024-05-24T15:01:10.375Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions [none]
+[debug] [2024-05-24T15:01:10.375Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:01:10.375Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T15:01:10.513Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions 200
+[debug] [2024-05-24T15:01:10.513Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-24T15:01:11.692Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases pageSize=10&pageToken=
+[debug] [2024-05-24T15:01:11.963Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases 200
+[debug] [2024-05-24T15:01:11.964Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases {"releases":[{"name":"projects/softphone-283aa/releases/cloud.firestore","rulesetName":"projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19","createTime":"2024-05-24T14:50:10.921819Z","updateTime":"2024-05-24T14:50:10.921819Z"}]}
+[debug] [2024-05-24T15:01:11.964Z] Found ruleset: projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19
+[debug] [2024-05-24T15:01:11.964Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 [none]
+[debug] [2024-05-24T15:01:12.075Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 200
+[debug] [2024-05-24T15:01:12.075Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-24T15:01:12.791Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-05-24T15:01:12.791Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-05-24T15:01:13.007Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-05-24T15:01:13.007Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-05-24T15:01:13.185Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-05-24T15:01:13.185Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/softphone-283aa/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-05-24T15:01:13.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T15:01:13.186Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T15:01:13.186Z] [iam] checking project softphone-283aa for permissions ["firebase.projects.get"]
+[debug] [2024-05-24T15:01:13.186Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions [none]
+[debug] [2024-05-24T15:01:13.186Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:01:13.186Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T15:01:13.267Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions 200
+[debug] [2024-05-24T15:01:13.268Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T15:01:13.268Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-24T15:01:13.268Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:01:13.268Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-24T15:01:13.268Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:01:13.580Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-24T15:01:13.580Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-05-24T15:01:13.682Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-24T15:01:13.682Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote index1/package.json 
+[info] +  Wrote index1/.eslintrc.js 
+[info] +  Wrote index1/index.js 
+[info] +  Wrote index1/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-24T15:01:35.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T15:01:35.596Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T15:01:35.596Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa","realtimeDatabaseInstance":"softphone-283aa-default-rtdb"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-05-24T15:01:43.153Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-05-24T15:01:43.242Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-05-24T15:01:43.242Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.1","browserURL":"https://www.gstatic.com/firebasejs/10.12.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.1/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.1/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\nkaps\StudioProjects\softphone\functions is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=139917337&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-05-24T15:02:57.045Z] ----------------------------------------------------------------------
+[debug] [2024-05-24T15:02:57.047Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nkaps\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-24T15:02:57.048Z] CLI Version:   13.10.0
+[debug] [2024-05-24T15:02:57.048Z] Platform:      win32
+[debug] [2024-05-24T15:02:57.048Z] Node Version:  v22.2.0
+[debug] [2024-05-24T15:02:57.048Z] Time:          Fri May 24 2024 11:02:57 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-05-24T15:02:57.048Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-24T15:02:57.102Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-05-24T15:02:57.107Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T15:02:57.107Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T15:02:57.108Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\nkaps\StudioProjects\softphone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-24T15:03:04.788Z] Using project from CLI flag: softphone-283aa
+[debug] [2024-05-24T15:03:04.789Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T15:03:05.142Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T15:03:05.142Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa","realtimeDatabaseInstance":"softphone-283aa-default-rtdb"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[info] i  Using project softphone-283aa (Softphone) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-05-24T15:03:05.156Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-05-24T15:03:05.156Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:03:05.575Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com 200
+[debug] [2024-05-24T15:03:05.575Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-05-24T15:03:05.575Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/-/instances/softphone-283aa-default-rtdb [none]
+[debug] [2024-05-24T15:03:05.855Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/-/instances/softphone-283aa-default-rtdb 200
+[debug] [2024-05-24T15:03:05.855Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/softphone-283aa/locations/-/instances/softphone-283aa-default-rtdb {"name":"projects/786108804212/locations/us-central1/instances/softphone-283aa-default-rtdb","project":"projects/786108804212","databaseUrl":"https://softphone-283aa-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-05-24T15:03:10.277Z] >>> [apiv2][query] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-05-24T15:03:10.426Z] <<< [apiv2][status] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-05-24T15:03:10.426Z] <<< [apiv2][body] GET https://softphone-283aa-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for softphone-283aa-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-05-24T15:03:10.428Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com [none]
+[debug] [2024-05-24T15:03:10.428Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:03:10.687Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com 200
+[debug] [2024-05-24T15:03:10.687Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/firestore.googleapis.com [omitted]
+[debug] [2024-05-24T15:03:10.687Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) [none]
+[debug] [2024-05-24T15:03:10.985Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) 200
+[debug] [2024-05-24T15:03:10.985Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default) {"name":"projects/softphone-283aa/databases/(default)","uid":"1f05f1e6-e8e9-4504-ac63-722c3155c91f","createTime":"2024-05-24T14:50:06.489653Z","updateTime":"2024-05-24T14:50:06.489653Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-05-24T14:50:06.489653Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IO3GvrrHpoYDMJT1zNTEpoYD"}
+[debug] [2024-05-24T15:03:10.985Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-05-24T15:03:10.985Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T15:03:10.986Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T15:03:10.986Z] [iam] checking project softphone-283aa for permissions ["firebase.projects.get"]
+[debug] [2024-05-24T15:03:10.986Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions [none]
+[debug] [2024-05-24T15:03:10.986Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:03:10.986Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T15:03:11.152Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions 200
+[debug] [2024-05-24T15:03:11.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-24T15:03:11.818Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases pageSize=10&pageToken=
+[debug] [2024-05-24T15:03:12.070Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases 200
+[debug] [2024-05-24T15:03:12.071Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/releases {"releases":[{"name":"projects/softphone-283aa/releases/cloud.firestore","rulesetName":"projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19","createTime":"2024-05-24T14:50:10.921819Z","updateTime":"2024-05-24T14:50:10.921819Z"}]}
+[debug] [2024-05-24T15:03:12.071Z] Found ruleset: projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19
+[debug] [2024-05-24T15:03:12.071Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 [none]
+[debug] [2024-05-24T15:03:12.258Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 200
+[debug] [2024-05-24T15:03:12.259Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/softphone-283aa/rulesets/13f7f4bc-8eba-4b09-988e-6eba1962fd19 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-05-24T15:03:12.882Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-05-24T15:03:12.882Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-05-24T15:03:12.998Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-05-24T15:03:12.998Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-05-24T15:03:13.151Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-05-24T15:03:13.151Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/softphone-283aa/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/softphone-283aa/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-05-24T15:03:13.152Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-24T15:03:13.152Z] > authorizing via signed-in user (codingaadm@gmail.com)
+[debug] [2024-05-24T15:03:13.152Z] [iam] checking project softphone-283aa for permissions ["firebase.projects.get"]
+[debug] [2024-05-24T15:03:13.152Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions [none]
+[debug] [2024-05-24T15:03:13.152Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:03:13.152Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T15:03:13.226Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions 200
+[debug] [2024-05-24T15:03:13.227Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/softphone-283aa:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-24T15:03:13.227Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-24T15:03:13.227Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:03:13.227Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-24T15:03:13.227Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/softphone-283aa
+[debug] [2024-05-24T15:03:13.531Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-24T15:03:13.531Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-05-24T15:03:13.545Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-24T15:03:13.546Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/softphone-283aa/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote index1/package.json 
+[info] +  Wrote index1/.eslintrc.js 
+[info] +  Wrote index1/index.js 
+[info] +  Wrote index1/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-05-24T15:03:47.611Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa [none]
+[debug] [2024-05-24T15:03:47.844Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa 200
+[debug] [2024-05-24T15:03:47.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/softphone-283aa {"projectId":"softphone-283aa","projectNumber":"786108804212","displayName":"Softphone","name":"projects/softphone-283aa","resources":{"hostingSite":"softphone-283aa","realtimeDatabaseInstance":"softphone-283aa-default-rtdb"},"state":"ACTIVE","etag":"1_0b6108be-6715-4793-ad9d-4a4b711d0042"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-05-24T15:03:51.720Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-05-24T15:03:51.843Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-05-24T15:03:51.843Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.1","browserURL":"https://www.gstatic.com/firebasejs/10.12.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.1/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.1/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\nkaps\StudioProjects\softphone\functions is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=574705368&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-05-24T15:03:58.659Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-05-24T15:03:58.659Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-05-24T15:03:58.905Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-05-24T15:03:58.905Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-05-24T15:03:58.919Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-05-24T15:03:59.118Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-05-24T15:03:59.118Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"codingaadm","id":170041310,"node_id":"U_kgDOCiKf3g","avatar_url":"https://avatars.githubusercontent.com/u/170041310?v=4","gravatar_id":"","url":"https://api.github.com/users/codingaadm","html_url":"https://github.com/codingaadm","followers_url":"https://api.github.com/users/codingaadm/followers","following_url":"https://api.github.com/users/codingaadm/following{/other_user}","gists_url":"https://api.github.com/users/codingaadm/gists{/gist_id}","starred_url":"https://api.github.com/users/codingaadm/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/codingaadm/subscriptions","organizations_url":"https://api.github.com/users/codingaadm/orgs","repos_url":"https://api.github.com/users/codingaadm/repos","events_url":"https://api.github.com/users/codingaadm/events{/privacy}","received_events_url":"https://api.github.com/users/codingaadm/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2024-05-16T19:37:36Z","updated_at":"2024-05-16T19:38:01Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as codingaadm 
+[info] 
+[debug] [2024-05-24T15:04:09.734Z] >>> [apiv2][query] GET https://api.github.com/repos/ls/actions/secrets/public-key type=owner
+[debug] [2024-05-24T15:04:09.890Z] <<< [apiv2][status] GET https://api.github.com/repos/ls/actions/secrets/public-key 404
+[debug] [2024-05-24T15:04:09.891Z] <<< [apiv2][body] GET https://api.github.com/repos/ls/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-05-24T15:04:26.352Z] >>> [apiv2][query] GET https://api.github.com/repos/softphone/actions/secrets/public-key type=owner
+[debug] [2024-05-24T15:04:26.531Z] <<< [apiv2][status] GET https://api.github.com/repos/softphone/actions/secrets/public-key 404
+[debug] [2024-05-24T15:04:26.531Z] <<< [apiv2][body] GET https://api.github.com/repos/softphone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-05-24T15:04:55.563Z] >>> [apiv2][query] GET https://api.github.com/repos/softphone/actions/secrets/public-key type=owner
+[debug] [2024-05-24T15:04:55.845Z] <<< [apiv2][status] GET https://api.github.com/repos/softphone/actions/secrets/public-key 404
+[debug] [2024-05-24T15:04:55.845Z] <<< [apiv2][body] GET https://api.github.com/repos/softphone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-05-24T15:05:01.352Z] >>> [apiv2][query] GET https://api.github.com/repos/softphone/actions/secrets/public-key type=owner
+[debug] [2024-05-24T15:05:01.499Z] <<< [apiv2][status] GET https://api.github.com/repos/softphone/actions/secrets/public-key 404
+[debug] [2024-05-24T15:05:01.499Z] <<< [apiv2][body] GET https://api.github.com/repos/softphone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
