@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "786108804212",
+    "firebase_url": "https://softphone-283aa-default-rtdb.firebaseio.com",
+    "project_id": "softphone-283aa",
+    "storage_bucket": "softphone-283aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786108804212:android:015369a15c81da86727521",
+        "android_client_info": {
+          "package_name": "com.example.softphone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQRNNSGFj9byqQ3YgODQM4Cq3tX5xXvrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
