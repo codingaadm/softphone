@@ -10,6 +10,6 @@ class CallHistory extends StatefulWidget {
 class _CallHistoryState extends State<CallHistory> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Text('History');
   }
 }

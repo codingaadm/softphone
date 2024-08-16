@@ -29,7 +29,7 @@ class SettingsAppBar extends StatelessWidget implements PreferredSizeWidget{
         child: AppBar(
             automaticallyImplyLeading: false,
             leading: showBackArrow ? IconButton(
-                onPressed: () => Get.back(), icon: Icon(Icons.arrow_left)) :
+                onPressed: () => Get.back(), icon: const Icon(Icons.arrow_left)) :
             leadingIcon != null? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon)) : null,
             title: Obx(
                   () => Switch(value: _controller.currentTheme.value == ThemeMode.dark,

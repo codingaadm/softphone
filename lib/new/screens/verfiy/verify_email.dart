@@ -38,7 +38,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
   }
   @override
   Widget build(BuildContext context) => isEmailVerified
-  ? const DialPadPage() : Scaffold(
+  ?  DialPadPage() : Scaffold(
     appBar: const VerifyAppBar(),
       body: SafeArea(
         top: true,
@@ -67,7 +67,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
     });
     if(user!.emailVerified){
       timer?.cancel();
-      Get.to(() => const DialPadPage());}
+      Get.to(() =>  DialPadPage());}
   }
   Future sendVerifyEmail() async{
     try{

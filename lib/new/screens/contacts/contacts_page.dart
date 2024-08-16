@@ -9,9 +9,7 @@ class ContactsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-      appBar: ContactAppBar(),
-      body: Expanded(
+    return  const Expanded(
         flex: 1,
         child: SingleChildScrollView(
           child: Column(
@@ -39,7 +37,6 @@ class ContactsPage extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }

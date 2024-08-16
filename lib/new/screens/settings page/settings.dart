@@ -16,10 +16,7 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      resizeToAvoidBottomInset: false,
-      appBar: const SettingsAppBar(),
-      body: SingleChildScrollView(
+    return SingleChildScrollView(
         child: Column(
           children: [
             const SettingsTitle(title: 'Settings Page', subtitle: 'Make changes here'),
@@ -54,7 +51,6 @@ class SettingsPage extends StatelessWidget {
               onTap: () => Get.to(() => const VersionPage())),
           ],
         ),
-      ),
     );
   }
 }
