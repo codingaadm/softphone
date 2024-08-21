@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:softphone/new/screens/settings%20page/functions/change_email.dart';
+import 'package:softphone/new/screens/settings%20page/functions/change%20email/change_email.dart';
 import 'package:softphone/new/screens/settings%20page/functions/change_name.dart';
 import 'package:softphone/new/screens/settings%20page/functions/change_pbx.dart';
 import 'package:softphone/new/screens/settings%20page/functions/version_page.dart';

@@ -107,6 +107,9 @@ class AuthController extends GetxController{
         Get.snackbar('Error Occurred!', e.toString(), snackPosition: SnackPosition.BOTTOM);
       }
     }
+    void updateEmail() async {
+
+    }
   }
 extension StringExtension on String{
   String capitalizeString(){
