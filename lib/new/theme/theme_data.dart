@@ -18,11 +18,11 @@ class CustomTheme {
       WidgetStateProperty.resolveWith<Color>((states) => backgroundDark),
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: primary,
+      backgroundColor: secondary,
       scrolledUnderElevation: 0,
       titleTextStyle: TextStyle(
         fontWeight: FontWeight.w500,
-        color: secondary,
+        color: primary,
         fontSize: 23, //20
       ),
       iconTheme: IconThemeData(color: iconLight),
@@ -33,6 +33,13 @@ class CustomTheme {
         statusBarIconBrightness: Brightness.dark,
       ),
     ),
+    // bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    //   selectedItemColor: Colors.black,
+    //   unselectedItemColor: primary,
+    //   backgroundColor: secondary,
+    //
+    //
+    // ),
     // TextFormField decoration
       inputDecorationTheme: InputDecorationTheme(
         hintStyle: TextStyle(color: textLight),
@@ -53,7 +60,7 @@ class CustomTheme {
       WidgetStateProperty.resolveWith<Color>((states) => backgroundDark),
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: primary,
+      backgroundColor: secondary,
       scrolledUnderElevation: 0,
       titleTextStyle: TextStyle(
         fontWeight: FontWeight.w500,

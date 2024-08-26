@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:softphone/new/screens/messages/local%20widgets/message_tile.dart';
+import 'package:softphone/new/screens/messages/local%20widgets/message_title.dart';
 
 class MessagesPage extends StatefulWidget {
   const MessagesPage({super.key});
@@ -10,6 +12,10 @@ class MessagesPage extends StatefulWidget {
 class _MessagesPageState extends State<MessagesPage> {
   @override
   Widget build(BuildContext context) {
-    return const Text('Messages');
+    return const Expanded(
+        flex: 1,
+          child:
+              MessagesTile(),
+        );
   }
 }

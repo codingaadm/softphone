@@ -51,6 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           bottomNavigationBar: CurvedNavigationBar(
             backgroundColor: AppColors.primary,
+            buttonBackgroundColor: AppColors.secondary,
             color: AppColors.secondary,
             animationDuration: const Duration(milliseconds: 250),
             onTap: (i){
@@ -158,7 +159,7 @@ class NavBarItem extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(icon),
-          const SizedBox(height: 4,),
+          const SizedBox(height: 3,),
         ],
       ),
     );
