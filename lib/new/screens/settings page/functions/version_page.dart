@@ -5,6 +5,22 @@ class VersionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Version"),
+      ),
+      body: const SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(18.0),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                Text('...............'),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

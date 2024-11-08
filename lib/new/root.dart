@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:softphone/new/screens/dial%20page/dial_pad_page.dart';
 import 'package:softphone/new/theme/change_theme_switch.dart';
 import 'package:softphone/new/sizing/config.dart';
 import 'package:softphone/new/controller/auth_controller.dart';
@@ -35,7 +34,7 @@ class Root extends StatelessWidget {
             child: Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: Config.screenWidth! * 0.04),
-                child: _.isSignedIn.value ? const HomeScreen() : const SignIn()),
+                child: _.isSignedIn.value ? const HomeScreen() : SignIn()),
           );
         },
       ),

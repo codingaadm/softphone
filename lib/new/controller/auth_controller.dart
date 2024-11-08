@@ -56,7 +56,7 @@ class AuthController extends GetxController{
             password: password)
             .then((value) => displayName = userProfile!.displayName!);
         update();
-        Get.offAll(const HomeScreen());
+        Get.off(const HomeScreen());
       } on FirebaseAuthException catch (e){
         String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
         String message = '';
@@ -107,10 +107,7 @@ class AuthController extends GetxController{
         Get.snackbar('Error Occurred!', e.toString(), snackPosition: SnackPosition.BOTTOM);
       }
     }
-    void updateEmail() async {
-
-    }
-  }
+}
 extension StringExtension on String{
   String capitalizeString(){
     return "${this[0].toUpperCase()}${substring(1)}";

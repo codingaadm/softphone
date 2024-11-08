@@ -6,12 +6,11 @@ import 'package:softphone/new/controller/auth_controller.dart';
 import 'package:softphone/new/screens/call%20history/call_history.dart';
 import 'package:softphone/new/screens/contacts/contacts_page.dart';
 import 'package:softphone/new/screens/dial%20page/dial_pad_page.dart';
-import 'package:softphone/new/screens/home%20page/local%20widgets/home_page_buttons.dart';
-import 'package:softphone/new/screens/home%20page/local%20widgets/home_page_title.dart';
 import 'package:softphone/new/screens/messages/messages_page.dart';
 import 'package:softphone/new/screens/settings%20page/settings.dart';
 import 'package:softphone/new/screens/signUP/local%20widgets/app_bar_sign_up.dart';
-import 'package:softphone/old/theme.dart';
+
+import '../../theme/theme_data.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -39,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
       builder: (_authController) {
         return Scaffold(
           appBar: const AppBarSignUp(),
-          backgroundColor: AppColors.primary,
+          backgroundColor: CustomTheme.primary,
           body: Center(
             child: Column(
               children: [
@@ -50,9 +49,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           bottomNavigationBar: CurvedNavigationBar(
-            backgroundColor: AppColors.primary,
-            buttonBackgroundColor: AppColors.secondary,
-            color: AppColors.secondary,
+            backgroundColor: CustomTheme.primary,
+            buttonBackgroundColor: CustomTheme.secondary,
+            color: CustomTheme.secondary,
             animationDuration: const Duration(milliseconds: 250),
             onTap: (i){
               setState(() {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:softphone/new/screens/call%20history/local%20widgets/call_history_tile.dart';
-import 'package:softphone/new/screens/call%20history/local%20widgets/call_history_title.dart';
+import 'local widgets/call_history_tile.dart';
+import 'local widgets/call_history_title.dart';
 
 class CallHistory extends StatefulWidget {
   const CallHistory({super.key});
@@ -31,7 +31,8 @@ class _CallHistoryState extends State<CallHistory> {
               CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
               CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
               CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
-              CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),              CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
+              CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
+              CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
               CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
               CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),
               CallHistoryTile(title: 'Name/Number', subtitle: 'Time of call'),

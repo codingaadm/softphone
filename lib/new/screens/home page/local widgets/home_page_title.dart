@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:softphone/old/theme.dart';
+
+import '../../../theme/theme_data.dart';
 
 class HomePageTitle extends StatelessWidget {
   const HomePageTitle({
@@ -18,15 +19,15 @@ class HomePageTitle extends StatelessWidget {
         children: [
           Text(
             title!,
-            style: const TextStyle(fontSize: 30,
-                color: AppColors.textFaded,
+            style: TextStyle(fontSize: 30,
+                color: CustomTheme.textFaded,
                 fontFamily: 'nunito'),
           ),
           SizedBox(height: MediaQuery.of(context).size.height * 0.08),
           Text(
             subtitle!,
-            style: const TextStyle(fontSize: 30,
-                color: AppColors.textFaded,
+            style: TextStyle(fontSize: 30,
+                color: CustomTheme.textFaded,
                 fontFamily: 'nunito'),
           ),
         ],

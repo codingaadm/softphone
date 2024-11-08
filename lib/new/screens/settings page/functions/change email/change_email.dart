@@ -22,9 +22,9 @@ class _ChangeEmailState extends State<ChangeEmail> {
       body: Column(
         children: [
           ChangeEmailTitle(
-              title: 'Enter you new email',
+              title: 'Enter your new email',
               subtitle: ''),
-          // ChangeEmailForm(),
+          ChangeEmailForm(),
         ],
       ),
     );
